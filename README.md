@@ -8,11 +8,11 @@ Repositorio con los contenidos teóricos de la materia **Modelado de Software**,
 
 | # | Módulo | Descripción | Link al Material |
 |---|--------|-------------|------------------|
-| 01 | **Introducción** | ¿Qué es un modelo? UML, abstracción, objetos y modelos de análisis. | [Ver Módulo](./modulos/01_introduccion/01_introduccion_modelado_analisis.md) |
-| 02 | **Proceso Unificado** | Los 14 diagramas UML y las fases del Proceso Unificado (UP). | [Ver Módulo](./modulos/02_proceso_unificado/02_proceso_unificado_panorama_uml.md) |
-| 03 | **Casos de Uso** | Actores, escenarios, relaciones Include/Extend y fronteras. | [Ver Módulo](./modulos/03_casos_de_uso/03_casos_de_uso.md) |
-| 04 | **Clases** | Atributos, métodos y estereotipos (Entidad, Control, Límite). | [Ver Módulo](./modulos/04_clases/04_clases.md) |
-| 05 | **Secuencia** | Interacciones, líneas de vida, mensajes y enfoque de control. | [Ver Módulo](./modulos/05_diagramas_secuencia/05_diagramas_secuencia.md) |
+| 01 | **Introducción** | ¿Qué es un modelo? UML, abstracción, objetos y modelos de análisis. | [Ver Módulo](./01_introduccion/01_introduccion_modelado_analisis.md) |
+| 02 | **Proceso Unificado** | Los 14 diagramas UML y las fases del Proceso Unificado (UP). | [Ver Módulo](./02_proceso_unificado/02_proceso_unificado_panorama_uml.md) |
+| 03 | **Casos de Uso** | Actores, escenarios, relaciones Include/Extend y fronteras. | [Ver Módulo](./03_casos_de_uso/03_casos_de_uso.md) |
+| 04 | **Clases** | Atributos, métodos y estereotipos (Entidad, Control, Límite). | [Ver Módulo](./04_clases/04_clases.md) |
+| 05 | **Secuencia** | Interacciones, líneas de vida, mensajes y enfoque de control. | [Ver Módulo](./05_diagramas_secuencia/05_diagramas_secuencia.md) |
 
 ---
 ## 🗺️ Mapa de Conceptos
