@@ -1,4 +1,4 @@
-# Módulo 0: Panorama UML y Proceso Unificado
+# Módulo 2: Panorama UML y Proceso Unificado
 
 > Este módulo introduce el marco general de la materia. No vas a ver todo en detalle durante la cursada —  el tiempo no alcanza — pero es importante que sepas qué existe, para qué sirve cada cosa y dónde podés profundizar.
 
