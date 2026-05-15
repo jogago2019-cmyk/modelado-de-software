@@ -6,16 +6,15 @@ Repositorio con los contenidos teóricos de la materia **Modelado de Software**,
 
 ## 📋 Índice de Módulos
 
-| # | Módulo | Descripción |
-|---|--------|-------------|
-| 01 | [Introducción al Modelado y Análisis](./01_introduccion_modelado_analisis.md) | ¿Qué es un modelo? UML, abstracción, ciclo de vida, objetos (estado y comportamiento), modelo conceptual y modelo de análisis. |
-| 02 | [Proceso Unificado y Panorama UML](./02_proceso_unificado_panorama_uml.md) | Los 14 diagramas UML, el Proceso Unificado (UP), sus 4 fases y 5 flujos de trabajo. Los 4 diagramas de la cátedra con referencias a Booch, Larman, Pressman y Arlow. |
-| 03 | [Casos de Uso](./03_casos_de_uso.md) | Actores, casos de uso, escenarios, camino básico, pre/post-condición, relaciones Include/Extend y construcción del modelo. |
-| 04 | [Clases](./04_clases.md) | Definición, nomenclatura, guía de estilo, diccionario del modelo, perspectivas, estereotipos, clases Entidad/Límite/Control y VOPC. |
-| 05 | [Diagramas de Interacción y Secuencia](./05_diagramas_secuencia.md) | Diagramas de secuencia y colaboración, líneas de vida, mensajes, enfoque de control, scripts y notas. |
+| # | Módulo | Descripción | Link al Material |
+|---|--------|-------------|------------------|
+| 01 | **Introducción** | ¿Qué es un modelo? UML, abstracción, objetos y modelos de análisis. | [Ver Módulo](./modulos/01_introduccion/01_introduccion_modelado_analisis.md) |
+| 02 | **Proceso Unificado** | Los 14 diagramas UML y las fases del Proceso Unificado (UP). | [Ver Módulo](./modulos/02_proceso_unificado/02_proceso_unificado_panorama_uml.md) |
+| 03 | **Casos de Uso** | Actores, escenarios, relaciones Include/Extend y fronteras. | [Ver Módulo](./modulos/03_casos_de_uso/03_casos_de_uso.md) |
+| 04 | **Clases** | Atributos, métodos y estereotipos (Entidad, Control, Límite). | [Ver Módulo](./modulos/04_clases/04_clases.md) |
+| 05 | **Secuencia** | Interacciones, líneas de vida, mensajes y enfoque de control. | [Ver Módulo](./modulos/05_diagramas_secuencia/05_diagramas_secuencia.md) |
 
 ---
-
 ## 🗺️ Mapa de Conceptos
 
 ```
@@ -71,19 +70,17 @@ modelado-de-software/
 ├── modulos/
 │   ├── 01_introduccion/
 │   │   ├── 01_introduccion_modelado_analisis.md
-│   │   └── Modulo_01_Introduccion_Modelado.docx
 │   ├── 02_proceso_unificado/
 │   │   ├── 02_proceso_unificado_panorama_uml.md
-│   │   └── Modulo_02_Proceso_Unificado_Panorama_UML.docx
 │   ├── 03_casos_de_uso/
 │   │   ├── 03_casos_de_uso.md
-│   │   └── Modulo_03_Casos_de_Uso.docx
+│   │   └── img
 │   ├── 04_clases/
 │   │   ├── 04_clases.md
-│   │   └── Modulo_04_Clases.docx
+│   │   └── img
 │   └── 05_diagramas_secuencia/
 │       ├── 05_diagramas_secuencia.md
-│       └── Modulo_05_Diagramas_Secuencia.docx
+│       └── img
 ```
 
 ---
