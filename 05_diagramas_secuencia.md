@@ -88,6 +88,7 @@ La numeración es opcional, pero puede utilizarse para hacer referencia a la num
 
 **Ejemplo:**
 ```
+![Diagrama de Secuencia](./img/diagrama secuencia_git.png)
 PantallaHorario      ControlInscripcion     ListaDeCursosDisponibles
      │                      │                         │
      │ // 2.2.1.3.2:         │                         │
