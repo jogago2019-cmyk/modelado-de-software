@@ -4,16 +4,6 @@
 
 ---
 
-## Bibliografía de referencia
-
-| Autor(es) | Obra | Relevancia |
-|-----------|------|------------|
-| Booch, G., Rumbaugh, J., Jacobson, I. | *El Lenguaje Unificado de Modelado* (1999). Addison-Wesley | Los creadores de UML. La referencia definitiva. |
-| Larman, C. | *UML y Patrones* (2003). Prentice Hall | El libro más usado en ingeniería de software universitaria. Claro y lleno de ejemplos. |
-| Pressman, R. | *Ingeniería del Software: Un Enfoque Práctico* (2010). McGraw-Hill | Visión amplia del proceso de desarrollo. Contextualiza UML dentro de la ingeniería. |
-| Arlow, J. & Neustadt, I. | *UML 2 and the Unified Process* (2005). Addison-Wesley | El libro que mejor explica cómo UML y el Proceso Unificado se usan juntos en la práctica. |
-
----
 
 ## 0.1 ¿Por qué UML?
 
@@ -25,59 +15,6 @@ En 1994, Booch, Rumbaugh y Jacobson —los llamados "los tres amigos"— unifica
 > — Booch, Rumbaugh, Jacobson (1999)
 
 Pressman (2010) lo describe como "una herramienta de comunicación entre todos los participantes del proceso de desarrollo", no solo entre programadores.
-
----
-
-## 0.2 Los 14 Diagramas UML
-
-UML define **14 tipos de diagramas** divididos en dos categorías. Es imposible usar todos en un mismo proyecto; la clave está en saber cuál aplicar según el problema.
-
-### Diagramas Estructurales — ¿cómo está construido?
-
-Representan la arquitectura estática del sistema: sus piezas y cómo se organizan.
-
-| # | Diagrama | Qué muestra | Cuándo usarlo |
-|---|----------|-------------|---------------|
-| 1 | **Clases** | Atributos, métodos y relaciones entre clases | Siempre. Es el diagrama central del análisis y diseño OO. |
-| 2 | **Objetos** | Instancias concretas de clases en un momento dado | Para verificar escenarios específicos o ejemplificar relaciones. |
-| 3 | **Componentes** | Módulos, librerías y sus interfaces | Cuando se trabaja con arquitecturas de componentes o microservicios. |
-| 4 | **Despliegue** | Nodos de hardware y cómo se distribuye el software | Documentar la infraestructura física del sistema. |
-| 5 | **Paquetes** | Agrupaciones lógicas de clases o subsistemas | Organizar modelos grandes; definir arquitectura de capas. |
-| 6 | **Estructura compuesta** | Partes internas de una clase y sus puertos | Diseñar componentes internamente complejos. |
-| 7 | **Perfil** | Extensiones personalizadas de UML | Adaptar UML a un dominio específico (ej. sistemas embebidos, bases de datos). |
-
-> *"El diagrama de clases es el más importante de todos. Si solo vas a aprender uno, ese es."*
-> — Larman (2003, p. 78)
-
-### Diagramas de Comportamiento — ¿cómo se comporta?
-
-Representan la dinámica del sistema: qué hace, cómo reacciona, cómo evoluciona en el tiempo.
-
-| # | Diagrama | Qué muestra | Cuándo usarlo |
-|---|----------|-------------|---------------|
-| 8 | **Casos de uso** | Actores y funcionalidades del sistema | Al inicio del proyecto para capturar requisitos funcionales. |
-| 9 | **Actividad** | Flujo de acciones, decisiones y paralelismo | Modelar algoritmos complejos o procesos de negocio. |
-| 10 | **Estado** | Ciclo de vida de un objeto y sus transiciones | Objetos cuyo comportamiento depende de su estado (ej. pedido, inscripción). |
-| 11 | **Secuencia** | Mensajes entre objetos ordenados en el tiempo | Detallar escenarios de casos de uso paso a paso. |
-| 12 | **Comunicación** (Colaboración) | Red de objetos y mensajes sin eje temporal | Ver quién se comunica con quién; alternativa al diagrama de secuencia. |
-| 13 | **Temporización** | Cambios de estado en función del tiempo real | Sistemas de tiempo real o con restricciones temporales estrictas. |
-| 14 | **Interacción (general)** | Visión de conjunto combinando varios diagramas de interacción | Sistemas muy grandes donde se necesita navegar entre diagramas. |
-
-> *"La elección del diagrama adecuado es una habilidad que se adquiere con la práctica. No existe una regla universal."*
-> — Arlow & Neustadt (2005, p. 34)
-
-### ¿Cuáles veremos en la cátedra?
-
-Por razones de tiempo, profundizaremos en cuatro:
-
-| Diagrama | Módulo | Pregunta que responde |
-|----------|--------|-----------------------|
-| Casos de uso | Módulo 2 | ¿Qué hace el sistema para sus actores? |
-| Clases | Módulo 3 | ¿Cómo está estructurado el sistema? |
-| Secuencia | Módulo 4 | ¿Cómo interactúan los objetos en el tiempo? |
-| Estado | Próxima cursada | ¿Cómo cambia el estado de un objeto a lo largo de su vida? |
-
-El resto existen, son válidos y en muchos proyectos son indispensables. La bibliografía de la materia los cubre; se recomienda leer al menos los capítulos correspondientes en Larman y Arlow.
 
 ---
 
@@ -212,15 +149,4 @@ Como sintetiza Booch (1999): *"Un modelo incompleto que el equipo entiende es in
 
 ---
 
-## Referencias completas
-
-- Booch, G., Rumbaugh, J., & Jacobson, I. (1999). *El Lenguaje Unificado de Modelado*. Addison-Wesley.
-- Larman, C. (2003). *UML y Patrones: Introducción al Análisis y Diseño Orientado a Objetos y al Proceso Unificado* (2ª ed.). Prentice Hall.
-- Pressman, R. S. (2010). *Ingeniería del Software: Un Enfoque Práctico* (7ª ed.). McGraw-Hill.
-- Arlow, J., & Neustadt, I. (2005). *UML 2 and the Unified Process: Practical Object-Oriented Analysis and Design* (2ª ed.). Addison-Wesley.
-- Jacobson, I., Booch, G., & Rumbaugh, J. (1999). *The Unified Software Development Process*. Addison-Wesley.
-- Harel, D. (1987). Statecharts: A visual formalism for complex systems. *Science of Computer Programming*, 8(3), 231–274.
-
----
-
-*Siguiente módulo → [01: Introducción al Modelado y Análisis](./01_introduccion_modelado_analisis.md)*
+*← [Volver al índice](./README.md)*

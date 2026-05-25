@@ -1,98 +1,90 @@
-# 📚 Modelado de Software — Material de Cátedra
+# 📚 Modelado de Software con UML y Proceso Unificado
 
-Repositorio con los contenidos teóricos de la materia **Modelado de Software**, organizados en módulos temáticos progresivos. Cada módulo incluye explicaciones, tablas, ejemplos y referencias bibliográficas académicas.
+Repositorio académico orientado a la enseñanza de **Modelado de Software**, utilizando UML y el Proceso Unificado (UP) como base metodológica.
+
+El material está organizado en módulos progresivos que combinan:
+- teoría,
+- análisis,
+- ejemplos,
+- diagramas UML,
+- y una guía integradora completa aplicada a un caso real.
+
+---
+
+# 🎯 Objetivos de la Materia
+
+- Comprender el propósito del modelado de software.
+- Introducir UML como lenguaje estándar de modelado.
+- Aplicar el Proceso Unificado (UP).
+- Identificar actores, casos de uso y clases.
+- Modelar estructura y comportamiento del sistema.
+- Interpretar escenarios reales mediante UML.
+- Comprender el flujo completo del análisis orientado a objetos.
 
 ---
 
-## 📋 Índice de Módulos
+# 📋 Índice de Módulos
 
-| # | Módulo | Descripción | Link al Material |
-|---|--------|-------------|------------------|
-| 01 | **Introducción** | ¿Qué es un modelo? UML, abstracción, objetos y modelos de análisis. | [Ver Módulo](./01_introduccion/01_introduccion_modelado_analisis.md) |
-| 02 | **Proceso Unificado** | Los 14 diagramas UML y las fases del Proceso Unificado (UP). | [Ver Módulo](./02_proceso_unificado/02_proceso_unificado_panorama_uml.md) |
-| 03 | **Casos de Uso** | Actores, escenarios, relaciones Include/Extend y fronteras. | [Ver Módulo](./03_casos_de_uso/03_casos_de_uso.md) |
-| 04 | **Clases** | Atributos, métodos y estereotipos (Entidad, Control, Límite). | [Ver Módulo](./04_clases/04_clases.md) |
-| 05 | **Secuencia** | Interacciones, líneas de vida, mensajes y enfoque de control. | [Ver Módulo](./05_diagramas_secuencia/05_diagramas_secuencia.md) |
+| # | Módulo | Descripción | Acceso |
+|---|--------|-------------|---------|
+| 01 | Introducción al Modelado | Conceptos fundamentales de modelado, abstracción y UML. | [Ver módulo](./01_introduccion/) |
+| 02 | Proceso Unificado | Fundamentos del UP, fases, disciplinas y panorama UML. | [Ver módulo](./02_proceso_unificado/) |
+| 03 | Casos de Uso | Actores, escenarios, include, extend y especificaciones. | [Ver módulo](./03_casos_de_uso/) |
+| 04 | Diagramas de Clases | Clases, atributos, relaciones y estereotipos. | [Ver módulo](./04_clases/) |
+| 05 | Diagramas de Secuencia | Interacciones, mensajes y flujo temporal. | [Ver módulo](./05_diagramas_secuencia/) |
+| 06 | Ejemplo Integrador — Veterinaria | Aplicación completa del modelado sobre un escenario real. | [Ver módulo](./06_ejemplo_integrador_veterinaria/) |
+| 07 | Trabajo Integrador | Espacio destinado al desarrollo de trabajos grupales. | [Ver módulo](./07_trabajo_integrador/) |
 
 ---
-## 🗺️ Mapa de Conceptos
 
-```
+# 🗺️ Mapa Conceptual General
+
+```text
 MODELADO DE SOFTWARE
 │
-├── 01. Introducción al Modelado y Análisis
-│   ├── ¿Qué es un modelo? ¿Por qué modelamos?
-│   ├── UML: historia y 4 objetivos (visualizar, especificar, construir, documentar)
-│   ├── Abstracción: minimiza la complejidad
-│   ├── Ciclo de vida lineal vs orientado a objetos
-│   ├── Objetos: estado (atributos) y comportamiento (operaciones)
+├── 01. Introducción al Modelado
+│   ├── ¿Qué es un modelo?
+│   ├── UML
+│   ├── Abstracción
+│   ├── Objetos
 │   ├── Modelo Conceptual
-│   └── Modelo de Análisis: vista estática y vista dinámica
+│   └── Modelo de Análisis
 │
-├── 02. Proceso Unificado y Panorama UML
-│   ├── Los 14 diagramas UML (estructurales y de comportamiento)
-│   ├── El Proceso Unificado: iterativo, incremental, dirigido por CU
-│   ├── Las 4 fases: Inicio → Elaboración → Construcción → Transición
-│   ├── Los 5 flujos: Requisitos, Análisis, Diseño, Implementación, Prueba
-│   └── Los 4 diagramas de la cátedra con referencias académicas
+├── 02. Proceso Unificado
+│   ├── Fases del UP
+│   ├── Iteraciones
+│   ├── Disciplinas
+│   ├── UML y UP
+│   └── Flujo de desarrollo
 │
 ├── 03. Casos de Uso
-│   ├── Comportamiento del sistema y Modelo de CU
-│   ├── Actores: propiedades y cómo identificarlos
-│   ├── Casos de Uso: definición, instancias y escenarios
-│   ├── Pasos: actores → CU → descripción → camino básico → reestructurar
-│   ├── Pre/Post-Condición y Camino Básico
-│   └── Relaciones: Include (obligatorio) vs Extend (opcional)
+│   ├── Actores
+│   ├── Casos de Uso
+│   ├── Escenarios
+│   ├── Include / Extend
+│   ├── Camino Básico
+│   └── Especificaciones
 │
 ├── 04. Clases
-│   ├── Definición: atributos, operaciones, asociaciones, semántica
-│   ├── Nomenclatura PascalCase y Diccionario del Modelo
-│   ├── Perspectivas: Conceptual → Especificación → Implementación
-│   ├── Estereotipos: <<entity>>, <<boundary>>, <<control>>
-│   ├── Clase de Entidad, Límite y Control
-│   └── VOPC: Vista de Clases Participantes por RCU
+│   ├── Clases
+│   ├── Atributos
+│   ├── Operaciones
+│   ├── Relaciones
+│   ├── Entity / Boundary / Control
+│   └── Modelo de Dominio
 │
-└── 05. Diagramas de Interacción y Secuencia
-    ├── Tipos: Secuencia (tiempo) vs Colaboración (red)
-    ├── Objetos, líneas de vida y mensajes
-    ├── Enfoque de Control, Notas y Scripts
-    ├── Anatomía completa del diagrama de secuencia
-    └── Relación con las Realizaciones de CU (RCU)
-```
-
----
-
-## 🗂️ Estructura del repositorio
-
-```
-modelado-de-software/
-├── README.md
-├── modulos/
-│   ├── 01_introduccion/
-│   │   ├── 01_introduccion_modelado_analisis.md
-│   ├── 02_proceso_unificado/
-│   │   ├── 02_proceso_unificado_panorama_uml.md
-│   ├── 03_casos_de_uso/
-│   │   ├── 03_casos_de_uso.md
-│   │   └── img
-│   ├── 04_clases/
-│   │   ├── 04_clases.md
-│   │   └── img
-│   └── 05_diagramas_secuencia/
-│       ├── 05_diagramas_secuencia.md
-│       └── img
-```
-
----
-
-## 📖 Bibliografía de la Materia
-
-- **Booch, G., Rumbaugh, J., & Jacobson, I.** (1999). *El Lenguaje Unificado de Modelado*. Addison-Wesley. — Los creadores de UML. Referencia definitiva.
-- **Larman, C.** (2003). *UML y Patrones* (2ª ed.). Prentice Hall. — El libro más usado en la cursada.
-- **Pressman, R. S.** (2010). *Ingeniería del Software: Un Enfoque Práctico* (7ª ed.). McGraw-Hill. — Contexto amplio del proceso de desarrollo.
-- **Arlow, J., & Neustadt, I.** (2005). *UML 2 and the Unified Process* (2ª ed.). Addison-Wesley. — UML y el Proceso Unificado en la práctica.
-- **Jacobson, I., Booch, G., & Rumbaugh, J.** (1999). *The Unified Software Development Process*. Addison-Wesley.
-
----
-
-*Material elaborado para la Cátedra de Modelado de Software.*
+├── 05. Diagramas de Secuencia
+│   ├── Líneas de Vida
+│   ├── Mensajes
+│   ├── Focus Control
+│   ├── Interacciones
+│   └── Realizaciones de CU
+│
+└── 06. Ejemplo Integrador
+    ├── Escenario
+    ├── Requerimientos
+    ├── Casos de Uso
+    ├── Modelo de Dominio
+    ├── Secuencia
+    ├── Estado
+    └── Trazabilidad

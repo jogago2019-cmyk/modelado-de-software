@@ -103,18 +103,12 @@ Un CU es algo de funcionalidad ejecutada por el sistema en respuesta a un estím
 ## 2.5 Representación en UML
 
 ### El Actor:
-```
-        O
-        |        ← Figura de palito (stickman)
-       / \
-    NombreActor
-```
+
+![Figura de palito](img/actor_monigote.png)
 
 ### El Caso de Uso:
-```
-   (                    )   ← Óvalo/elipse
-     Nombre del Caso de Uso
-```
+
+![Ejemplo caso de uso](img/caso_uso.png)
 
 ### La Asociación (comunicación entre Actor y CU):
 - Se representa con una **línea con punta de flecha**.
@@ -145,19 +139,11 @@ Hay que considerar si un CU es **completo por sí mismo** (*asociación*) o si *
 ### Tipos de escenarios:
 Cada caso de uso tendrá una red de escenarios:
 
-- **Escenarios primarios** ("happy day scenarios"): flujo básico — la forma en la que el sistema debe funcionar idealmente o la mayoría de las veces.
-- **Escenarios secundarios**:
+- **Escenarios exitosos** ("happy day scenarios"): flujo básico — la forma en la que el sistema debe funcionar idealmente o la mayoría de las veces.
+- **Escenarios alternativos**:
   - Flujos alternos
   - Flujos de excepción
 
-### ¿Cuántos escenarios son necesarios?
-> Respuesta sencilla: **tantos como uno necesite para entender el sistema a desarrollar**.
-
-**Recomendación:**
-- Elaborar aproximadamente el **80% de los escenarios primarios**.
-- Elaborar **algunos de los escenarios secundarios** interesantes y de alto riesgo.
-
----
 
 ## 2.8 Pasos para construir el Modelo de Casos de Uso
 
@@ -189,17 +175,17 @@ En el **Camino Básico** se coloca una detallada descripción paso a paso de lo 
 
 ---
 
-## 2.11 Paso 4: Pre-Post-Condición y Camino Básico
+## 2.11 Paso 4: Pre-Post-Condición y Camino Exitoso
 
 ### Pre-condición:
 Se debe definir el estado inicial como **precondición** (el estado en que debe estar el sistema para que pueda iniciarse el CU).
 
-### Camino Básico:
-El **camino básico** de cada CU es una descripción textual de la secuencia de acciones del CU. Especifica lo que el sistema hace y cómo interactúa con los actores cuando se lleva a cabo ese CU.
+### Camino Exitoso:
+El **camino exitoso** de cada CU es una descripción textual de la secuencia de acciones del CU. Especifica lo que el sistema hace y cómo interactúa con los actores cuando se lleva a cabo ese CU.
 
-> *El camino básico debe ser el más normal, que se percibe habitualmente, aquel que proporciona el valor más obvio.*
+> *El camino exitoso debe ser el más normal, que se percibe habitualmente, aquel que proporciona el valor más obvio.*
 
-En el camino básico debe asegurarse que vaya:
+En el camino exitoso debe asegurarse que vaya:
 - Cómo y cuándo comienza el CU (la primera acción)
 - El orden en que las acciones se deben ejecutar (numeración)
 - La interacción de los actores con el sistema
@@ -209,7 +195,7 @@ En el camino básico debe asegurarse que vaya:
 - Cómo y cuándo termina el CU
 
 ### Caminos Alternativos:
-Se describen en secciones separadas, como las desviaciones del camino básico (flujos alternos, excepciones, errores, etc.).
+Se describen en secciones separadas, como las desviaciones del camino exitoso (flujos alternos, excepciones, errores, etc.).
 
 ### Post-condición:
 Se definen los posibles estados finales como **postcondiciones**.
@@ -222,27 +208,27 @@ Se definen los posibles estados finales como **postcondiciones**.
 
 Una vez armado el modelo, se reestructura para:
 
-#### Include (Inclusión):
+### Include (Inclusión):
 Sirve para **reducir la redundancia**: un código puede extraerse y describirse en un CU separado que puede ser reutilizado por el caso de uso original.
 
 - Si un CU A incluye a un CU B, indica que **una instancia del caso A incluirá también el comportamiento especificado en B**.
 - En el *include* es **necesario** que ocurra el caso incluido, tan sólo para satisfacer el objetivo del caso de uso base.
 
 **Ejemplo:**
-```
-[Cliente] ──→ (Registrar una Venta en cuotas) --<include>--> (Autorizar Tarjeta de Crédito)
-```
+
+![Ejemplo include](img/include.png)
+
 Cada vez que se registra una venta en cuotas, *siempre* se autoriza la tarjeta.
 
-#### Extend (Extensión):
+### Extend (Extensión):
 Modela la **adición** de una secuencia de acciones a un CU. La extensión se comporta como si fuera algo que se añade a la descripción, en ciertos casos particulares del caso de uso.
 
 - En el *extend*, el caso de uso de extensión **no es indispensable** que ocurra; cuando lo hace ofrece un valor extra (extiende) al objetivo original del caso de uso base.
 
 **Ejemplo:**
-```
-[Vendedor] ──→ (Realizar venta) <--<extend>-- (Acumular Puntos VIP)
-```
+
+![Ejemplo extend](img/extend.png)
+
 Puedes realizar una venta sin acumular puntos VIP, pero si eres cliente VIP sí acumularás puntos.
 
 ---
@@ -292,16 +278,8 @@ La **frontera del sistema** delimita qué está dentro y qué está fuera del si
 - Los casos de uso están **dentro** de la frontera.
 - Identificar todos los actores equivale a identificar el **entorno externo** del sistema.
 
-```
-┌─────────────────────────────────────┐
-│          Sistema                    │
-│   ( CU 1 )    ( CU 2 )             │
-│                                     │
-│   ( CU 3 )    ( CU 4 )             │
-└─────────────────────────────────────┘
- 👤 Actor A              👤 Actor B
-```
+![Frontera](img/frontera.png)
 
 ---
 
-*← [01: Introducción al Modelado](./01_introduccion_modelado_analisis.md) | Siguiente módulo → [03: Clases](./03_clases.md)*
+*← [Volver al índice](./README.md)*

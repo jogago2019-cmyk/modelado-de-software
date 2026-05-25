@@ -172,31 +172,7 @@ Las clases resultantes se agrupan en paquetes tomando criterios de Arquitectura 
 
 ---
 
-## 1.9 ¿Qué es una Realización de Casos de Uso (RCU)?
-
-Una **RCU** describe cómo un escenario de un CU es realizado por varios objetos colaborando entre sí. Esto se representa con:
-- Diagramas de Secuencia
-- Diagramas de Colaboración
-- Diagramas de Clases
-
-### Ciclo de vida de una RCU:
-1. La definición **inicia** con el Análisis de Casos de Uso (para el Modelo de Análisis).
-2. La definición **se completa** con el Diseño de Casos de Uso (para el Modelo de Diseño).
-3. El **objetivo final** es especificar qué clases deben construirse para implementar ese CU.
-
-### Representación en UML:
-En UML, una RCU se muestra como un **óvalo con línea punteada**, asociado al caso de uso que realiza, con una flecha de línea punteada y cabeza cerrada.
-
-```
-[Caso de Uso XX] ◁- - - - - [Realización de Caso de Uso XX]
-                                    ├── Diagrama de Secuencia
-                                    ├── Diagrama de Colaboración
-                                    └── Diagrama de Clases
-```
-
----
-
-## 1.10 Objetos: Estado y Comportamiento
+## 1.9 Objetos: Estado y Comportamiento
 
 ### Un Objeto tiene Estado
 
@@ -223,11 +199,8 @@ El **comportamiento** determina cómo un objeto actúa y reacciona.
 - Los mensajes se implementan como las **operaciones del objeto**.
 
 **Ejemplo:**
-```
-[Oficial de Registro Jiménez] --Asignar a Profesora Clark a dar Cálculo Integral 332--> [Profesora Clark]
-                              <--(Devuelve: confirmación)-----------------------------
-```
 
+![Ejemplo comportamiento obj](img/ejemplo_prof_clark.png)
 ---
 
 ## 1.11 Representando Objetos con UML
@@ -253,14 +226,6 @@ Es el **primer modelo de clases** que se debe hacer y reúne las **abstracciones
 - Se obtiene al examinar la **descripción del problema** y en entrevistas con los expertos del dominio.
 - Se usa como una base de entendimiento y cooperación con los **expertos de dominio y/o clientes**.
 - **No debe incluir los detalles** de las clases, solo debe identificarlas.
-
-### Incluye:
-- Un **Diccionario del Modelo**
-- Uno o más **Diagramas de Clases** (normalmente solo uno)
-
----
-
-*Siguiente módulo → [02: Casos de Uso](./02_casos_de_uso.md)*
 
 ---
 
@@ -309,17 +274,8 @@ UML define **14 tipos de diagramas** organizados en dos grandes categorías.
 ### Ejemplo 1 — Diagrama de Clases
 Muestra atributos, operaciones y relaciones entre clases. Usa 3 compartimientos: nombre, atributos y operaciones.
 
-```
-┌────────────────────┐         ┌────────────────────┐         ┌────────────────────┐
-│    Estudiante      │  1    1 │      Horario        │  1  0..* │     Seccion        │
-├────────────────────┤─────────├────────────────────┤──────────├────────────────────┤
-│ - legajo: String   │         │ - semestre: String  │          │ - codigo: String   │
-│ - nombre: String   │  tiene  │ - anio: int         │ contiene │ - cupo: int        │
-│ - email: String    │         │                     │          │ - abierta: boolean │
-├────────────────────┤         ├────────────────────┤          ├────────────────────┤
-│ + inscribirse()    │         │ + agregar(s:Seccion)│          │ + validar()        │
-└────────────────────┘         └────────────────────┘          └────────────────────┘
-```
+![Ejemplo diagrama clases](img/ejemplo_clases_estud.png)
+
 
 **Relaciones posibles:** asociación (→), agregación (◇→), composición (◆→), herencia (▷), dependencia (- - →)
 
@@ -328,34 +284,14 @@ Muestra atributos, operaciones y relaciones entre clases. Usa 3 compartimientos:
 ### Ejemplo 2 — Diagrama de Casos de Uso
 Muestra los actores y las funcionalidades del sistema y sus relaciones.
 
-```
-                     ┌─────────────────────────────────────┐
-                     │    Sistema de Inscripción           │
-  👤                 │                                     │                 👤
-Estudiante ──────────│──→ ( Inscribirse en cursos )        │    Encargado
-           ──────────│──→ ( Ver horario )                  │──────────────→ ( Autorizar inscripción )
-                     │              │                      │
-                     │      «include»│                     │
-                     │              ▼                      │
-                     │  (- - - Validar prerrequisitos - -) │
-                     └─────────────────────────────────────┘
-```
+![Diagrama caso de uso ejemplo](img/ejemplo_caso_uso.png)
 
----
 
 ### Ejemplo 3 — Diagrama de Secuencia
 Muestra los mensajes entre objetos ordenados **en el tiempo** (de arriba hacia abajo).
 
-```
-:Estudiante   :PantallaHorario   :ControlInscripcion   :Seccion
-     |               |                   |                  |
-     |─── t1: abrir horario ────────────►|                  |
-     |               |─── t2: someter horario ─────────────►|
-     |               |                   |── t3: validar() ─►|
-     |               |                   |◄── t4: ok ────── |
-     |               |◄── t5: confirmacion ─────────────────|
-     |◄── t6: mostrar resultado ─────────|                  |
-```
+![Diagrama de secuencia](img/ejemplo_diagrama_secuencia.png)
+
 Las líneas punteadas verticales son **líneas de vida**. El rectángulo sobre la línea es el **enfoque de control**.
 
 ---
