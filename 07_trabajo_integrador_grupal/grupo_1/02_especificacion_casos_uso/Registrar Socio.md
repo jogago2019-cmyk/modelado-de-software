@@ -11,7 +11,7 @@
 | Objetivo | Registrar al socio en el sistema |
 | Actor Principal | Biblotecario |
 | Actores Secundarios | - |
-| Precondición | Ingresar los datos personales del socio |
+| Precondición | el biblotecario inicia sesion|
 | Postcondición | Registrar exitosamente al socio |
 
 ---

@@ -36,7 +36,8 @@ Cada actor interactúa únicamente con las funcionalidades relacionadas con sus 
 | CU-05  | Registrar Reserva    |
 | CU-06  | Registrar Préstamo   |
 | CU-07  | Registrar Devolución |
-| CU-08  | Aplicar Multa        |
+| CU-08  | Cambiar Estado|
+| CU-09  | Aplicar Multa        |
 
 ## 👩‍💼 Casos de Uso Administrador
 
@@ -51,14 +52,14 @@ Cada actor interactúa únicamente con las funcionalidades relacionadas con sus 
 | CU-07  | Modificar Libro         |
 | CU-08  | Consultar Socio         |
 | CU-09  | Modificar Socio         |
-| CU-10  | Actualizar Stock        |
+| CU-10  | Cambiar estado       |
 | CU-11  | Generar Reporte         |
 
 ---
 
 # 📚 Actor: Bibliotecario
 
-![Diagrama caso de uso Bibliotecario](img/CU-Bibliotecario.png)
+![Diagrama caso de uso Bibliotecario](img/CU-Biblotecario.png)
 
 # 📖 Explicación — Casos de Uso Bibliotecario
 
@@ -73,6 +74,7 @@ La relación `<<include>>` representa funcionalidades obligatorias en el sistema
 Por ejemplo:
 
 * al registrar un préstamo, el sistema debe verificar la disponibilidad del libro.
+* tambien al registrar reserva,prestamo o devolucion,es obligatorio que cambie el estado del libro dependiendo lo que se realice.
 * y para registrar una reserva, el sistema debe consultar la disponibilidad del libro.
 
 Estas acciones siempre se ejecutan como parte del flujo principal.
@@ -85,8 +87,7 @@ La relación `<<extend>>` representa escenarios alternativos u opcionales.
 
 En este caso:
 
-* Actualizar Stock,
-* y Aplicar Multa.
+ Aplicar Multa.
 
 Esta acción no siempre se ejecuta, depende de las condiciones específicas del sistema.
 
@@ -110,7 +111,7 @@ Las relaciones `<<include>>` representan funcionalidades obligatorias en el sist
 
 Por ejemplo:
 
-* Se usa para Actualizar Stock (obligatorio al dar de Alta Libro o Modificar Libro).
+* Se usa para cambiar el estado de la disponiblidad del libro (obligatorio al dar de Alta Libro).
 
 Estas funcionalidades siempre forman parte del caso principal.
 
